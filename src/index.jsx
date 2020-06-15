@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import WinInsta from './WinInsta/WinInsta';
 
-function Container() {
 
-    //container style
-    const Wrapper = styled.div`
+//container style
+const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -14,11 +13,14 @@ function Container() {
     align-items: center;
     background-color: royalblue;
     `;
-    //container style
+//container style
 
+
+function Container() {
+    let username = 'mozilla';
     return (
         <Wrapper>
-            <WinInsta/>
+            <WinInsta username={username} />
         </Wrapper>
     );
 }
